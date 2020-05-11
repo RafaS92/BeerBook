@@ -33,3 +33,83 @@ Migrating to CreateBeers (20200511023533)
   [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.8ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Hennepin"], ["image", "https://robohash.org/utdoloresperspiciatis.png?size=300x300&set=set1"], ["description", "vibrant, big, musty, nutella, bakers chocolate"], ["likes", 0], ["unlikes", 0], ["origin", "El Balsamo-Quetzaltepec, El Salvador"], ["created_at", "2020-05-11 03:06:11.908515"], ["updated_at", "2020-05-11 03:06:11.908515"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBeer Load (0.1ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "beers" WHERE "beers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Arrogant Bastard Ale"], ["image", "https://robohash.org/voluptatemvoluptatequaerat.png?size=300x300&set=set1"], ["description", "wild, watery, lemonade, coconut, peach"], ["likes", 0], ["unlikes", 0], ["origin", "Cundinamarca, Colombia"], ["created_at", "2020-05-11 03:09:03.428336"], ["updated_at", "2020-05-11 03:09:03.428336"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Maharaj"], ["image", "https://robohash.org/nesciuntmaioresearum.png?size=300x300&set=set1"], ["description", "soft, coating, orange creamsicle, dates, honey"], ["likes", 0], ["unlikes", 0], ["origin", "Pulneys, India"], ["created_at", "2020-05-11 03:09:03.432504"], ["updated_at", "2020-05-11 03:09:03.432504"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Péché Mortel"], ["image", "https://robohash.org/eamaximeerror.png?size=300x300&set=set1"], ["description", "dirty, coating, golden raisin, coconut, grapefruit"], ["likes", 0], ["unlikes", 0], ["origin", "Antigua, Guatemala"], ["created_at", "2020-05-11 03:09:03.436105"], ["updated_at", "2020-05-11 03:09:03.436105"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Stone IPA"], ["image", "https://robohash.org/hicdoloremquis.png?size=300x300&set=set1"], ["description", "pointed, smooth, bittersweet chocolate, marshmallow, bakers chocolate"], ["likes", 0], ["unlikes", 0], ["origin", "Rulindo, Rwanda"], ["created_at", "2020-05-11 03:09:03.439694"], ["updated_at", "2020-05-11 03:09:03.439694"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ten FIDY"], ["image", "https://robohash.org/utrepellendusarchitecto.png?size=300x300&set=set1"], ["description", "dense, chewy, dates, plum, squash"], ["likes", 0], ["unlikes", 0], ["origin", "Kibale, Uganda"], ["created_at", "2020-05-11 03:09:03.443192"], ["updated_at", "2020-05-11 03:09:03.443192"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Weihenstephaner Hefeweissbier"], ["image", "https://robohash.org/ipsumdoloremmaxime.png?size=300x300&set=set1"], ["description", "crisp, smooth, banana, dill, liquorice"], ["likes", 0], ["unlikes", 0], ["origin", "Nariño, Colombia"], ["created_at", "2020-05-11 03:09:03.447055"], ["updated_at", "2020-05-11 03:09:03.447055"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Trappistes Rochefort 10"], ["image", "https://robohash.org/velitvitaeexcepturi.png?size=300x300&set=set1"], ["description", "pointed, creamy, blueberry, milk chocolate, orange blossom"], ["likes", 0], ["unlikes", 0], ["origin", "Raimi, Yemen"], ["created_at", "2020-05-11 03:09:03.451020"], ["updated_at", "2020-05-11 03:09:03.451020"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Westmalle Trappist Tripel"], ["image", "https://robohash.org/animieumtenetur.png?size=300x300&set=set1"], ["description", "dry, syrupy, bittersweet chocolate, sweet pea, cream"], ["likes", 0], ["unlikes", 0], ["origin", "Rulindo, Rwanda"], ["created_at", "2020-05-11 03:09:03.454485"], ["updated_at", "2020-05-11 03:09:03.454485"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Stone Imperial Russian Stout"], ["image", "https://robohash.org/omnissedpossimus.png?size=300x300&set=set1"], ["description", "dry, watery, granola, raspberry, graham cracker"], ["likes", 0], ["unlikes", 0], ["origin", "Dipilto, Nicaragua"], ["created_at", "2020-05-11 03:09:03.457702"], ["updated_at", "2020-05-11 03:09:03.457702"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Bourbon County Stout"], ["image", "https://robohash.org/recusandaeoptioexpedita.png?size=300x300&set=set1"], ["description", "unbalanced, tea-like, red grape, lemon verbena, graham cracker"], ["likes", 0], ["unlikes", 0], ["origin", "Comayagua, Honduras"], ["created_at", "2020-05-11 03:09:03.461128"], ["updated_at", "2020-05-11 03:09:03.461128"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chimay Grande Réserve"], ["image", "https://robohash.org/molestiaeomnisdignissimos.png?size=300x300&set=set1"], ["description", "sharp, silky, cedar, pecan, soy sauce"], ["likes", 0], ["unlikes", 0], ["origin", "Acatenango, Guatemala"], ["created_at", "2020-05-11 03:09:03.464544"], ["updated_at", "2020-05-11 03:09:03.464544"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alpha King Pale Ale"], ["image", "https://robohash.org/eositaquepossimus.png?size=300x300&set=set1"], ["description", "muted, syrupy, lemonade, ginger, wheat"], ["likes", 0], ["unlikes", 0], ["origin", "Cerrado, Brazil"], ["created_at", "2020-05-11 03:09:03.468126"], ["updated_at", "2020-05-11 03:09:03.468126"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chimay Grande Réserve"], ["image", "https://robohash.org/nonreprehenderitbeatae.png?size=300x300&set=set1"], ["description", "clean, full, magnolia, banana, cantaloupe"], ["likes", 0], ["unlikes", 0], ["origin", "Boquete, Panama"], ["created_at", "2020-05-11 03:09:03.471803"], ["updated_at", "2020-05-11 03:09:03.471803"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.6ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ten FIDY"], ["image", "https://robohash.org/quoidmolestiae.png?size=300x300&set=set1"], ["description", "dirty, silky, apricot, passion fruit, prune"], ["likes", 0], ["unlikes", 0], ["origin", "Huila, Colombia"], ["created_at", "2020-05-11 03:09:03.477523"], ["updated_at", "2020-05-11 03:09:03.477523"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Orval Trappist Ale"], ["image", "https://robohash.org/rerumautemqui.png?size=300x300&set=set1"], ["description", "juicy, smooth, hops, orange blossom, mango"], ["likes", 0], ["unlikes", 0], ["origin", "Mogiana, Brazil"], ["created_at", "2020-05-11 03:09:03.492949"], ["updated_at", "2020-05-11 03:09:03.492949"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pliny The Elder"], ["image", "https://robohash.org/quiaquiaaut.png?size=300x300&set=set1"], ["description", "structured, tea-like, nutmeg, molasses, mint"], ["likes", 0], ["unlikes", 0], ["origin", "Bugisu, Uganda"], ["created_at", "2020-05-11 03:09:03.496422"], ["updated_at", "2020-05-11 03:09:03.496422"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ten FIDY"], ["image", "https://robohash.org/accusamusdoloremrerum.png?size=300x300&set=set1"], ["description", "complex, juicy, snow pea, nutmeg, black cherry"], ["likes", 0], ["unlikes", 0], ["origin", "Embu, Kenya"], ["created_at", "2020-05-11 03:09:03.499696"], ["updated_at", "2020-05-11 03:09:03.499696"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Weihenstephaner Hefeweissbier"], ["image", "https://robohash.org/estnobiset.png?size=300x300&set=set1"], ["description", "muted, slick, golden raisin, lemonade, coconut"], ["likes", 0], ["unlikes", 0], ["origin", "Kayanza, Burundi"], ["created_at", "2020-05-11 03:09:03.503352"], ["updated_at", "2020-05-11 03:09:03.503352"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Westmalle Trappist Tripel"], ["image", "https://robohash.org/laboreistetotam.png?size=300x300&set=set1"], ["description", "unbalanced, juicy, cashew, orange creamsicle, fresh wood"], ["likes", 0], ["unlikes", 0], ["origin", "Kigeyo Washing Station, Rwanda"], ["created_at", "2020-05-11 03:09:03.506762"], ["updated_at", "2020-05-11 03:09:03.506762"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alpha King Pale Ale"], ["image", "https://robohash.org/quidemrerumcupiditate.png?size=300x300&set=set1"], ["description", "faint, juicy, magnolia, apricot, soil"], ["likes", 0], ["unlikes", 0], ["origin", "Cerrado, Brazil"], ["created_at", "2020-05-11 03:09:03.528600"], ["updated_at", "2020-05-11 03:09:03.528600"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBeer Create (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("name", "image", "description", "likes", "unlikes", "origin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Edmund Fitzgerald Porter"], ["image", "https://robohash.org/facerenisiquidem.png?size=300x300&set=set1"], ["description", "sharp, silky, lemonade, papaya, molasses"], ["likes", 0], ["unlikes", 0], ["origin", "Mt. Kenya, Kenya"], ["created_at", "2020-05-11 03:09:03.532149"], ["updated_at", "2020-05-11 03:09:03.532149"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers" LIMIT ?[0m  [["LIMIT", 11]]
