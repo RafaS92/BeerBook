@@ -1,0 +1,3 @@
+/beerbook-backend/tmp/*
+/beerbook-backend/db/development.sqlite3
+/beerbook-backend/log/*
